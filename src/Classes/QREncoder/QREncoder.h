@@ -33,6 +33,8 @@
 }
 
 + (UIImage *)encode:(NSString *)str;
++ (UIImage *)encode:(NSString *)str scale:(int)scale;
 + (UIImage *)encode:(NSString *)str size:(int)size correctionLevel:(QRCorrectionLevel)level;
++ (UIImage *)encode:(NSString *)str size:(int)size correctionLevel:(QRCorrectionLevel)level scale:(int)scale;
 
 @end

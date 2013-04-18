@@ -368,13 +368,15 @@ static int RS_BLOCK_TABLE[][7] = {
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-+ (UIImage *)imageForMatrix:(QRMatrix *)matrix {
-  int width = matrix.width;
-  int height = matrix.height;
+//TODO: Need to support actual image size, not just 'scale'
++ (UIImage *)imageForMatrix:(QRMatrix *)matrix scale:(int)scale{
+        
+  int width = scale*matrix.width;
+  int height = scale*matrix.height;
   unsigned char *bytes = (unsigned char *)malloc(width * height * 4);
   for(int y = 0; y < height; y++) {
     for(int x = 0; x < width; x++) {
-      BOOL bit = [matrix getX:x y:y];
+      BOOL bit = [matrix getX:floor(x/scale) y:floor(y/scale)];
       unsigned char intensity = bit ? 0 : 255;
       for(int i = 0; i < 3; i++) {
         bytes[y * width * 4 + x * 4 + i] = intensity;
@@ -398,45 +400,60 @@ static int RS_BLOCK_TABLE[][7] = {
   return image2;
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//+ (UIImage *)imageForMatrix:(QRMatrix *)matrix{
+//    
+//    return [QREncoder imageForMatrix:matrix scale:1];
+//}
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 + (UIImage *)encode:(NSString *)str {
-  return [QREncoder encode:str size:4 correctionLevel:QRCorrectionLevelHigh];
+    return [QREncoder encode:str scale:1];
 }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//TODO: Need to support actual image size, not just 'scale'
++ (UIImage *)encode:(NSString *)str scale:(int)scale {
+    return [QREncoder encode:str size:4 correctionLevel:QRCorrectionLevelHigh scale:scale];
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 + (UIImage *)encode:(NSString *)str size:(int)size correctionLevel:(QRCorrectionLevel)level {
-  QREncoder *encoders[8];
-  for(int i = 0; i < 8; i++) {
-    encoders[i] = [[QREncoder alloc] initWithStr:str size:size correctionLevel:level pattern:i];
-    [encoders[i] encode];
-  }
-  
-  int minLostPoint = LONG_MAX;
-  QREncoder *encoder = nil;
-  for(int i = 0; i < 8; i++) {
-    if (encoders[i]->_matrix != nil) {
-      int lostPoint = [encoders[i] lostPoint];
-      if (lostPoint < minLostPoint) {
-        minLostPoint = lostPoint;
-        encoder = encoders[i];
-      }
+    return [QREncoder encode:str size:size correctionLevel:level scale:1];
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
++ (UIImage *)encode:(NSString *)str size:(int)size correctionLevel:(QRCorrectionLevel)level scale:(int)scale{
+    QREncoder *encoders[8];
+    for(int i = 0; i < 8; i++) {
+        encoders[i] = [[QREncoder alloc] initWithStr:str size:size correctionLevel:level pattern:i];
+        [encoders[i] encode];
     }
-  }
-
-  UIImage *image;
-  if (encoder != nil) {
-    image = [QREncoder imageForMatrix:encoder->_matrix];
-  } else {
-    image = nil;
-  }
-
-  for(int i = 0; i < 8; i++) {
-    [encoders[i] release];
-  }
-
-  return image;
+    
+    int minLostPoint = LONG_MAX;
+    QREncoder *encoder = nil;
+    for(int i = 0; i < 8; i++) {
+        if (encoders[i]->_matrix != nil) {
+            int lostPoint = [encoders[i] lostPoint];
+            if (lostPoint < minLostPoint) {
+                minLostPoint = lostPoint;
+                encoder = encoders[i];
+            }
+        }
+    }
+    
+    UIImage *image;
+    if (encoder != nil) {
+        image = [QREncoder imageForMatrix:encoder->_matrix scale:scale];
+    } else {
+        image = nil;
+    }
+    
+    for(int i = 0; i < 8; i++) {
+        [encoders[i] release];
+    }
+    
+    return image;
 }
 
 
