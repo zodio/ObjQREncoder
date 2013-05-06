@@ -303,6 +303,7 @@
 				GCC_PREFIX_HEADER = QREncoder_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = QREncoder;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -317,6 +318,7 @@
 				GCC_PREFIX_HEADER = QREncoder_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = QREncoder;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
