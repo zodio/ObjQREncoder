@@ -220,6 +220,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* QREncoder */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
@@ -302,6 +305,7 @@
 				GCC_PREFIX_HEADER = QREncoder_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = QREncoder;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -315,6 +319,7 @@
 				GCC_PREFIX_HEADER = QREncoder_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = QREncoder;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
