@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F8E88BA1A2F2F110032ECA9 /* libQREncoderOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8E88AF1A2F2F110032ECA9 /* libQREncoderOSX.a */; };
+		8F8E88C71A2F2F570032ECA9 /* QREncoderOSX_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 8F8E88C61A2F2F570032ECA9 /* QREncoderOSX_Prefix.pch */; };
+		8F8E88CC1A2F2FEB0032ECA9 /* QRBitBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA33110A4F1840071984A /* QRBitBuffer.h */; };
+		8F8E88CD1A2F2FEB0032ECA9 /* QRMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA33310A4F1840071984A /* QRMatrix.h */; };
+		8F8E88CE1A2F2FEB0032ECA9 /* QRMath.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA33910A4F1840071984A /* QRMath.h */; };
+		8F8E88CF1A2F2FEB0032ECA9 /* QRPolynomial.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA33B10A4F1840071984A /* QRPolynomial.h */; };
+		8F8E88D01A2F2FEB0032ECA9 /* QRRSBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA33D10A4F1840071984A /* QRRSBlock.h */; };
+		8F8E88D11A2F2FEB0032ECA9 /* QRCorrectionLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA33610A4F1840071984A /* QRCorrectionLevel.h */; };
+		8F8E88D21A2F2FFF0032ECA9 /* QRBitBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DA33210A4F1840071984A /* QRBitBuffer.m */; };
+		8F8E88D31A2F2FFF0032ECA9 /* QRMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DA33410A4F1840071984A /* QRMatrix.m */; };
+		8F8E88D41A2F2FFF0032ECA9 /* QRMath.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DA33A10A4F1840071984A /* QRMath.m */; };
+		8F8E88D51A2F2FFF0032ECA9 /* QRPolynomial.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DA33C10A4F1840071984A /* QRPolynomial.m */; };
+		8F8E88D61A2F2FFF0032ECA9 /* QRRSBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DA33E10A4F1840071984A /* QRRSBlock.m */; };
+		8F8E88D81A2F300A0032ECA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8E88D71A2F300A0032ECA9 /* Foundation.framework */; };
+		8F8E892D1A2F39920032ECA9 /* QREncoderOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8E892C1A2F39920032ECA9 /* QREncoderOSX.h */; };
+		8F8E892F1A2F39A30032ECA9 /* QREncoderOSX.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E892E1A2F39A30032ECA9 /* QREncoderOSX.m */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		EB7DA2E710A4ECE30071984A /* QREncoder_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA2E610A4ECE30071984A /* QREncoder_Prefix.pch */; };
 		EB7DA33F10A4F1840071984A /* QRBitBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7DA33110A4F1840071984A /* QRBitBuffer.h */; };
@@ -32,7 +48,24 @@
 		EB7DA44010A4F9E00071984A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7DA43F10A4F9E00071984A /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8F8E88BB1A2F2F110032ECA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F8E88AE1A2F2F110032ECA9;
+			remoteInfo = QREncoderOSX;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8F8E88AF1A2F2F110032ECA9 /* libQREncoderOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQREncoderOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8E88B91A2F2F110032ECA9 /* QREncoderOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QREncoderOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8E88BF1A2F2F110032ECA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8E88C61A2F2F570032ECA9 /* QREncoderOSX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QREncoderOSX_Prefix.pch; sourceTree = "<group>"; };
+		8F8E88D71A2F300A0032ECA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8F8E892C1A2F39920032ECA9 /* QREncoderOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QREncoderOSX.h; path = Classes/QREncoder/QREncoderOSX.h; sourceTree = SOURCE_ROOT; };
+		8F8E892E1A2F39A30032ECA9 /* QREncoderOSX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QREncoderOSX.m; path = Classes/QREncoderOSX.m; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libQREncoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQREncoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7DA2E610A4ECE30071984A /* QREncoder_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QREncoder_Prefix.pch; sourceTree = "<group>"; };
@@ -57,6 +90,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F8E88AC1A2F2F110032ECA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8E88D81A2F300A0032ECA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8E88B61A2F2F110032ECA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8E88BA1A2F2F110032ECA9 /* libQREncoderOSX.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07C0554694100DB518D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +130,8 @@
 			children = (
 				D2AAC07E0554694100DB518D /* libQREncoder.a */,
 				EB7DA3AE10A4F5D90071984A /* QREncoderTest.octest */,
+				8F8E88AF1A2F2F110032ECA9 /* libQREncoderOSX.a */,
+				8F8E88B91A2F2F110032ECA9 /* QREncoderOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +142,8 @@
 				EB7DA3C610A4F6290071984A /* Tests */,
 				08FB77AEFE84172EC02AAC07 /* Encoder */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
+				8F8E88B01A2F2F110032ECA9 /* QREncoderOSX */,
+				8F8E88BD1A2F2F110032ECA9 /* QREncoderOSXTests */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				EB7DA3AF10A4F5D90071984A /* QREncoderTest-Info.plist */,
@@ -102,6 +155,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F8E88D71A2F300A0032ECA9 /* Foundation.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -122,8 +176,34 @@
 			isa = PBXGroup;
 			children = (
 				EB7DA2E610A4ECE30071984A /* QREncoder_Prefix.pch */,
+				8F8E88C61A2F2F570032ECA9 /* QREncoderOSX_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8F8E88B01A2F2F110032ECA9 /* QREncoderOSX */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E892C1A2F39920032ECA9 /* QREncoderOSX.h */,
+				8F8E892E1A2F39A30032ECA9 /* QREncoderOSX.m */,
+			);
+			path = QREncoderOSX;
+			sourceTree = "<group>";
+		};
+		8F8E88BD1A2F2F110032ECA9 /* QREncoderOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E88BE1A2F2F110032ECA9 /* Supporting Files */,
+			);
+			path = QREncoderOSXTests;
+			sourceTree = "<group>";
+		};
+		8F8E88BE1A2F2F110032ECA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E88BF1A2F2F110032ECA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EB7DA15D10A4DCD50071984A /* Maths */ = {
@@ -155,6 +235,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8F8E88AD1A2F2F110032ECA9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8E88CC1A2F2FEB0032ECA9 /* QRBitBuffer.h in Headers */,
+				8F8E88CD1A2F2FEB0032ECA9 /* QRMatrix.h in Headers */,
+				8F8E88CE1A2F2FEB0032ECA9 /* QRMath.h in Headers */,
+				8F8E88CF1A2F2FEB0032ECA9 /* QRPolynomial.h in Headers */,
+				8F8E88D01A2F2FEB0032ECA9 /* QRRSBlock.h in Headers */,
+				8F8E88D11A2F2FEB0032ECA9 /* QRCorrectionLevel.h in Headers */,
+				8F8E892D1A2F39920032ECA9 /* QREncoderOSX.h in Headers */,
+				8F8E88C71A2F2F570032ECA9 /* QREncoderOSX_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07A0554694100DB518D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +268,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8F8E88AE1A2F2F110032ECA9 /* QREncoderOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F8E88C41A2F2F110032ECA9 /* Build configuration list for PBXNativeTarget "QREncoderOSX" */;
+			buildPhases = (
+				8F8E88AB1A2F2F110032ECA9 /* Sources */,
+				8F8E88AC1A2F2F110032ECA9 /* Frameworks */,
+				8F8E88AD1A2F2F110032ECA9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QREncoderOSX;
+			productName = QREncoderOSX;
+			productReference = 8F8E88AF1A2F2F110032ECA9 /* libQREncoderOSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8F8E88B81A2F2F110032ECA9 /* QREncoderOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F8E88C51A2F2F110032ECA9 /* Build configuration list for PBXNativeTarget "QREncoderOSXTests" */;
+			buildPhases = (
+				8F8E88B51A2F2F110032ECA9 /* Sources */,
+				8F8E88B61A2F2F110032ECA9 /* Frameworks */,
+				8F8E88B71A2F2F110032ECA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F8E88BC1A2F2F110032ECA9 /* PBXTargetDependency */,
+			);
+			name = QREncoderOSXTests;
+			productName = QREncoderOSXTests;
+			productReference = 8F8E88B91A2F2F110032ECA9 /* QREncoderOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D2AAC07D0554694100DB518D /* QREncoder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "QREncoder" */;
@@ -206,7 +336,7 @@
 			name = QREncoderTest;
 			productName = QREncoderTest;
 			productReference = EB7DA3AE10A4F5D90071984A /* QREncoderTest.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -215,6 +345,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					8F8E88AE1A2F2F110032ECA9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8F8E88B81A2F2F110032ECA9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "QREncoder" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -230,11 +368,20 @@
 			targets = (
 				D2AAC07D0554694100DB518D /* QREncoder */,
 				EB7DA3AD10A4F5D90071984A /* QREncoderTest */,
+				8F8E88AE1A2F2F110032ECA9 /* QREncoderOSX */,
+				8F8E88B81A2F2F110032ECA9 /* QREncoderOSXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F8E88B71A2F2F110032ECA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EB7DA3A910A4F5D90071984A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +408,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F8E88AB1A2F2F110032ECA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8E88D21A2F2FFF0032ECA9 /* QRBitBuffer.m in Sources */,
+				8F8E88D31A2F2FFF0032ECA9 /* QRMatrix.m in Sources */,
+				8F8E88D41A2F2FFF0032ECA9 /* QRMath.m in Sources */,
+				8F8E88D51A2F2FFF0032ECA9 /* QRPolynomial.m in Sources */,
+				8F8E892F1A2F39A30032ECA9 /* QREncoderOSX.m in Sources */,
+				8F8E88D61A2F2FFF0032ECA9 /* QRRSBlock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8E88B51A2F2F110032ECA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +456,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F8E88BC1A2F2F110032ECA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F8E88AE1A2F2F110032ECA9 /* QREncoderOSX */;
+			targetProxy = 8F8E88BB1A2F2F110032ECA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -331,6 +506,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
@@ -344,9 +520,176 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		8F8E88C01A2F2F110032ECA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QREncoderOSX_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8F8E88C11A2F2F110032ECA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QREncoderOSX_Prefix.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8F8E88C21A2F2F110032ECA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = QREncoderOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8F8E88C31A2F2F110032ECA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = QREncoderOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -427,6 +770,24 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F8E88C41A2F2F110032ECA9 /* Build configuration list for PBXNativeTarget "QREncoderOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8E88C01A2F2F110032ECA9 /* Debug */,
+				8F8E88C11A2F2F110032ECA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F8E88C51A2F2F110032ECA9 /* Build configuration list for PBXNativeTarget "QREncoderOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8E88C21A2F2F110032ECA9 /* Debug */,
+				8F8E88C31A2F2F110032ECA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
