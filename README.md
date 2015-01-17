@@ -7,8 +7,8 @@ licensed under the Apache Licence, Version 2.0
 
 Ported from http://github.com/whomwah/rqrcode by Bill Jacobs.
 
-Support
-=======
+Supported Platforms
+===================
 Supports iOS and OSX (TODO: Add min versions!)
 
 Adding the QR Encoder to your project
